@@ -1,6 +1,7 @@
 
 const nameInput = document.getElementById('visitor');
 const emailInput = document.getElementById('email');
+const textArea = document.getElementById('subject');
 
 const focusHandler = event => {
   event.target.className = 'highlight';
@@ -13,8 +14,9 @@ const blurHandler = event => {
 nameInput.addEventListener('focus', focusHandler);
 nameInput.addEventListener('blur', blurHandler);                          
                 
-emailInput.addEventListener('focus', focusHandler);
-emailInput.addEventListener('blur', blurHandler);
+
+textArea.addEventListener('focus', focusHandler);
+textArea.addEventListener('blur', blurHandler);
 
 
 // Can only contain letters a-z in lowercase
@@ -26,6 +28,10 @@ function isValidVisitor(visitor) {
 // Must be a valid email address
 function isValidEmail(email) {
   return /^[^@]+@[^@.]+\.[a-z]+$/i.test(email);
+}
+
+function isValidText(subject) {
+  return /^[Aa-Zz]+$/i.test(subject);
 }
 
 
@@ -51,3 +57,5 @@ function createListener(validator) {
 nameInput.addEventListener("input", createListener(isValidVisitor));
 
 emailInput.addEventListener("input", createListener(isValidEmail));
+
+textArea.addEventListener("textarea", createListener(isValidText));

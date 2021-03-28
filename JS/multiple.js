@@ -21,5 +21,5 @@ function User(user, age, sex) {
             this.sex = sex;
         }
         
-document.getElementById("demo").innerHTML =
+document.getElementById("info").innerHTML =
 "Creator of this app name is " + Shante.user + " and  " + Shante.age + " year old " + Shante.sex; 

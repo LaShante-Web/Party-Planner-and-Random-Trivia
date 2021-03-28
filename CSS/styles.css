@@ -12,7 +12,7 @@ body {
       
 }
 
-.header nav {
+ .header nav {
     text-align: center; 
 }
 
@@ -37,19 +37,9 @@ body {
 
 .header nav button a:hover {
     background-color:#00fa9a;
+  
 }
 
-
- button {
-    background: #00FFFF;
-    border: peachpuff;
-    padding-left: 20px;
-    padding-right: 20px; 
-    border-radius: 10px;
-    margin: 5px;
-
-
- }
 
 #recipeform .header {
     margin-bottom: 20px;
@@ -59,39 +49,16 @@ body {
 #recipeform {
     background-color: beige;
     border: 2px solid  gray;
-}
- /* .wrapper {
-     background-color: white;
+    width: 50%; 
+} 
 
-     padding: 75px; 
-    margin-top: 30px; 
-    color: #663399;
-   
-   
- } */
-
-
+ 
 header {
     text-align: center;
     font-size: 50px; 
 } 
 
 
-.container {
-  width: 538px;
-}
-section,
-aside {
-  margin: 10px;
-}
-section {
-  float: left;
-  width: 340px;
-}
-aside {
-  float: right;
-  width: 500px;
-}
 
 
 .form-search,
@@ -100,77 +67,52 @@ input {
      background: #00FFFF;
     margin: 20px; 
 
+} 
+
+#recipeform, 
+label, input {
+  text-align: center;
 }
  
 
 .card {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     background: linear-gradient(purple, pink);
     color: cyan; 
     
-   
     
     }
 
 
-      section, aside {
-    float: none;
-    width: auto;
-  }
-}
+
 h1 {
     text-align: center;
 }
 
-#recipeform {
-    margin: 100px; 
-    text-align: center;
-
+h3 {
+    color: palevioletred;
 }
 
-
-h1 {
-  margin-bottom: 0;
-}
-h1 + p {
-  font-size: 1.08em;
-  color: #637a91;
-  margin-top: .5em;
-  margin-bottom: 2.65em;
-  padding-bottom: 1.325em;
-  border-bottom: 1px dotted;
-}
-ul {
+ ul {
   padding-left: 0;
   list-style: none;
-}
-li {
+} 
+ li {
   padding: .45em .5em;
   margin-bottom: .35em;
   display: flex;
   align-items: center;
-}
-input,
-button {
-  font-size: .85em;
-  padding: .65em 1em;
-  border-radius: .3em;
-  outline: 0;
-}
-input {
-  border: 1px solid #dcdcdc;
-  margin-right: 1em;
-}
-div {
+} 
+
+/* div {
   margin-top: 2.8em;
   padding: 1.5em 0 .5em;
   /* border-top: 1px dotted #637a91; */
-}
-p.description,
-p:nth-of-type(2) {
-  font-weight: bold;
-}
+/* } */
+
+
+
 /* Buttons */
 button {
   color: white;
@@ -179,29 +121,34 @@ button {
   border-color: rgba(0, 0, 0, .1);
   cursor: pointer;
 }
-button + button {
-  margin-left: .5em;
-}
+
 p + button {
   background: #00FFFF;
-}
-/* .list button + button {
-  background: #768da3;
-}
-.list li button + button {
-  background: #508abc;
-}
-li button:first-child {
-  margin-left: auto;
-  background: #52bab3;
-}
-.list li button:last-child {
-  background: #768da3;
-}
+} 
+
 li button {
   font-size: .75em;
   padding: .5em .65em;
-} */
+}
+
+
+button {
+  background-color: palevioletred;
+  color: white;
+  padding: 2px 5px;
+  margin: 8px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  /* width: 30%; */
+}
+
+
+
+
+  section, aside {
+    float: none;
+    width: auto;
+  }
 
 
 
@@ -234,8 +181,39 @@ nav button {
    
 }
 
-  section, aside {
-    float: none;
-    width: auto;
-  }
+}
+
+
+@media only screen and (min-width: 800px) { 
+
+body {
+    background-color: #00FFFF;
+    
+}
+ 
+.header nav button a {
+     font-size: 17px; 
+     padding: 5px 5px; 
+ 
+    
+
+}
+
+.column-1 {
+     font-size: 1.5em;
+ }
+    
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+.header nav button a {
+     font-size: 25px; 
+     padding: 8px 8px; 
+ 
+    
+
+}
+
 }
