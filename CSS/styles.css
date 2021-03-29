@@ -46,10 +46,10 @@ body {
 }
    
 
-#recipeform {
+.flex-column {
     background-color: beige;
     border: 2px solid  gray;
-    width: 50%; 
+    width: 30%; 
 } 
 
  
@@ -169,7 +169,7 @@ body {
 
 .navigation {
   background: palevioletred;
-  opacity: 0.8;
+  /* opacity: 0.8; */
  
 }
 
