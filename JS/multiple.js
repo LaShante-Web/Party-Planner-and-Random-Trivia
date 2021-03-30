@@ -12,8 +12,8 @@ function User(user, age, sex) {
             this.age = age;
             this.sex = sex;
         }
-        const Shante = new User("Shante", 35, "Female");
-        console.log("Normal function using new keyword with parameters: ", Shante);
+        const LaShante = new User("LaShante", 35, "Female");
+        console.log(LaShante);
         //Arrow function with new keyword and parameter
         const Person = (user, age, sex) => {
             this.user = user;
@@ -22,4 +22,4 @@ function User(user, age, sex) {
         }
         
 document.getElementById("info").innerHTML =
-"Creator of this app name is " + Shante.user + " and  " + Shante.age + " year old " + Shante.sex; 
+"Creator of this app is " + LaShante.user + " and  " + LaShante.age + " year old " + LaShante.sex; 

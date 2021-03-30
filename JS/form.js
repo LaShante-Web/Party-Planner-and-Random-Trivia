@@ -19,9 +19,9 @@ textArea.addEventListener('focus', focusHandler);
 textArea.addEventListener('blur', blurHandler);
 
 
-// Can only contain letters a-z in lowercase
+// Can only contain letters a-z in uppercase
 function isValidVisitor(visitor) {
-  return /^[a-z]+$/.test(visitor);
+  return /^[A-Z]+$/.test(visitor);
 }
 
 

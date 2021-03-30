@@ -11,7 +11,6 @@ nav a  {
     flex-wrap: wrap;
     display: block;
     flex-basis: 100%;
-    flex: 1; 
    
        
     
@@ -20,47 +19,47 @@ nav a  {
 
 h1,
 p {
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #ccc; */
   max-width: 1200px;
   margin: auto;
   
 }
 
 
-   .col-1 {
+   .col-2 {
 	 
-    flex-direction: column; 
-    flex-basis: 30%;
+    flex-direction: row-reverse; 
+  
   
 
 } 
 
-.flex-row,
-.col-2
- { 
+.flex-container { 
   
-  width: 75%; 
+  width: 50%; 
   margin: auto; 
   flex-wrap: wrap;
-   width: 100%;
- flex-direction: row;
+ 
+ flex-direction: column-reverse
   
 } 
 
-/* .flex-column {
+  .flex-column {
+   flex-direction: column;
     flex-wrap: wrap;
     display: flex;
-    width: 800px;
+    width: 100%;
     margin: auto; 
    
-}
+}  
 
 input[type="text"],
 input[type="email"] {
   margin: auto; 
-  width: 300px; 
+  width: 50%; 
+ 
 
-} */
+} 
 
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
@@ -74,101 +73,106 @@ input[type="email"] {
 }
 
 
- .col-1 {
-	 
-    width: 100%;
-  
-
-} 
-
-li button {
-  flex-direction: row;
-
+.flex-column {
+  width: 75%; 
 }
 
-.flex-column,
-input[type="text"] {
-    /* flex-wrap: wrap;
-    display: flex; */
-    width: 200px;
-    margin: auto; 
-   
-} 
+
+input[type="text"],
+input[type="email"] {
+  margin: 10px; 
+  width: 50%; 
+ 
+
+}
 
 }
 
 
 @media only screen and (min-width: 800px) { 
 
-  
-.navigation {
-  flex-direction: row;
-  width: 100%; 
-  
-}
+
+
+ 
+
+/* h3 {
+   margin: auto;
+} */
 
 
 
- .flex-row {
-   flex-direction: column-reverse; 
-    max-width: 100%;
+ /* .card{
+   flex-direction: row-reverse; 
+    max-width: 25%;  
+    margin: 40%;
 
- }
+ } */
 
- .col-1 {
-	 flex-direction: row; 
+   .col-2 {
+	 flex-direction: column;
     display: flex;
     flex-wrap: wrap; 
-    margin: auto; 
-      /* flex-basis: 50%; */
+    margin: 50px; 
+    flex-basis: 50%;
 
 } 
 
-/* .col-2, */
-.flex-column {
-  flex-direction: column;
-  margin: auto;
-  max-width: 50%;
-  
+  .flex-column {
+   flex-direction: row-reverse;
+    flex-wrap: wrap;
+    display: flex; 
+     flex-basis: 75%;
+     margin: auto; 
+    
 }
 
-
-h3 {
-   margin: auto;
-}
-
+input[type="text"],
+input[type="email"] {
+  margin: 10px; 
+  width: 50%; 
  
 
-
 }
 
+}
 @media only screen and (min-width: 1200px) {
 
-.navigation {
- 
-  border-radius: 20px
-  
+
+ .header nav {
+    text-align: center; 
+    margin: 5%;
+
+ }
+
+
+ .flex-row {
+   margin: 20%; 
+ }
+.flex-container {
+  float: left;
+  /* width: 100%;  */
 }
 
- 
 
- .flex-column {
-    /* flex-wrap: wrap;
-    display: flex; */
-    width: 700px;
+ 
+ /* #button-primary, 
+ #food-img,
+ #form-search {
+     
+  float: left; 
+
     
-   
-}
+ }  */
 
 
 
 input[type="text"],
 input[type="email"] {
-  display: flex;
-  margin: 5px; 
-  width: 200px; 
+ 
+  margin: 10%; 
+  max-width: 80%;
+   
 }
 
-
-
+  
 }
