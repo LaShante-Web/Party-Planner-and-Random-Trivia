@@ -36,7 +36,7 @@ body {
 }
 
 .header nav button a:hover {
-    background-color:#00fa9a;
+    background-color: green;
   
 }
 
@@ -79,7 +79,7 @@ label, input {
     text-align: center;
     font-size: 20px;
     background: linear-gradient(purple, pink);
-    color: cyan;
+
      border: 2px solid gold;
     
     }
@@ -91,7 +91,7 @@ h1 {
 }
 
 h3 {
-    color: palevioletred;
+    color: gold;
 }
 
 
@@ -162,9 +162,9 @@ body {
     
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
 
-
+  
 
 
 }

@@ -26,6 +26,17 @@ p {
 }
 
 
+.flex-row-1  {
+  	display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    
+} 
+
+
    .col-2 {
 	 
     flex-direction: row-reverse; 
@@ -62,6 +73,17 @@ input[type="email"] {
 } 
 
 
+
+#ideas { 
+ flex-basis: 33%;
+ flex-direction: column;
+  
+
+ 
+  
+} 
+
+
 @media only screen and (min-width: 320px) and (max-width: 600px) {
 
  
@@ -72,6 +94,13 @@ input[type="email"] {
   
 }
 
+.col { 
+  
+  width: 75%; 
+  margin: auto; 
+  
+  
+} 
 
 .flex-column {
   width: 75%; 
@@ -93,20 +122,25 @@ input[type="email"] {
 
 
 
- 
+ .col { 
+  
+ flex-direction: column;
+ flex-basis: 75%; 
 
-/* h3 {
-   margin: auto;
-} */
+}
+  
+  
+.flex-row-1 {
+	  display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    
+}  
 
 
-
- /* .card{
-   flex-direction: row-reverse; 
-    max-width: 25%;  
-    margin: 40%;
-
- } */
 
    .col-2 {
 	 flex-direction: column;
@@ -134,8 +168,18 @@ input[type="email"] {
 
 }
 
+
+.col { 
+ width: 33%;
+ flex-direction: row;
+  
+
+ 
+  
+} 
+
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
 
 
  .header nav {
@@ -144,26 +188,28 @@ input[type="email"] {
 
  }
 
+   .col { 
+  
+ flex-basis: 25%; 
+ margin: 10px; 
+}
 
  .flex-row {
-   margin: 20%; 
+   margin: 30%; 
+
  }
+
 .flex-container {
   float: left;
-  /* width: 100%;  */
+ 
 }
 
 
- 
- /* #button-primary, 
- #food-img,
- #form-search {
-     
-  float: left; 
 
-    
- }  */
 
+ h1 {
+   margin: 30%; 
+ }
 
 
 input[type="text"],

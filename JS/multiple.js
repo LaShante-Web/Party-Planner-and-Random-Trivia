@@ -1,25 +1,25 @@
-function createGroceryList(grocery, button) {
-    alert(`Please created your ${grocery} list and click ${button} button for random trivia!`);
+function createShoppingList(list, button) {
+    alert(`Please created your ${list} and click the ${button} button for random trivia!`);
 }
 
 
-createGroceryList('grocery', 'trivia');
+createShoppingList('list', 'trivia');
 
 
 
-function User(user, age, sex) {
+function User(user, age, status) {
             this.user = user;
             this.age = age;
-            this.sex = sex;
+            this.status = status;
         }
-        const LaShante = new User("LaShante", 35, "Female");
+        const LaShante = new User("LaShante", 35, "student");
         console.log(LaShante);
-        //Arrow function with new keyword and parameter
+        
         const Person = (user, age, sex) => {
             this.user = user;
             this.age = age;
-            this.sex = sex;
+            this.student = student;
         }
         
 document.getElementById("info").innerHTML =
-"Creator of this app is " + LaShante.user + " and  " + LaShante.age + " year old " + LaShante.sex; 
+"Creator of this app is " + LaShante.user + " a  " + LaShante.age + " year old " + LaShante.status + ". Visitors can use this web application to plan parties, shopping, and everyday todo lists. Please create a title for your planner in the 1st input and add your list items in the 2nd input"; 
