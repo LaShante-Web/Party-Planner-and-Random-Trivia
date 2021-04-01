@@ -1,9 +1,9 @@
-function createShoppingList(list, button) {
-    alert(`Please created your ${list} and click the ${button} button for random trivia!`);
-}
+// function createShoppingList(list, button) {
+//     alert(`Please created your ${list} and click the ${button} button for random trivia!`);
+// }
 
 
-createShoppingList('list', 'trivia');
+// createShoppingList('list', 'trivia');
 
 
 

@@ -8,6 +8,7 @@
 
 body {
      background: #00FFFF;
+     background: url(../images/back.jpg) no-repeat 50% 50% / cover;
     
       
 }

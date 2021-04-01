@@ -12,26 +12,27 @@ const blurHandler = event => {
 }
 
 nameInput.addEventListener('focus', focusHandler);
-nameInput.addEventListener('blur', blurHandler);                          
+nameInput.addEventListener('blur', blurHandler);  
+
+emailInput.addEventListener('focus', focusHandler);
+emailInput.addEventListener('blur', blurHandler);
                 
 
 textArea.addEventListener('focus', focusHandler);
 textArea.addEventListener('blur', blurHandler);
 
 
-// Can only contain letters a-z in uppercase
 function isValidVisitor(visitor) {
-  return /^[A-Z]+$/.test(visitor);
+  return /^[a-z]+$/i.test(visitor);
 }
 
 
-// Must be a valid email address
 function isValidEmail(email) {
   return /^[^@]+@[^@.]+\.[a-z]+$/i.test(email);
 }
 
 function isValidText(subject) {
-  return /^[Aa-Zz]+$/i.test(subject);
+  return /^[A-Za-z]+$/i.test(subject);
 }
 
 
