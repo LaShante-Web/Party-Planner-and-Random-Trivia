@@ -1,4 +1,4 @@
-// API Key: 17f3e9584fd5415b843a722b72449800
+// API Key: 44775bcc16f3471491b2475052247c4b
 
 
 document.querySelector('.form-search').addEventListener('submit', (e) => {
@@ -7,7 +7,7 @@ document.querySelector('.form-search').addEventListener('submit', (e) => {
 })
 
 function fetchRandom(limitLicense) {
-    fetch(`https://api.spoonacular.com/food/trivia/random?apiKey=17f3e9584fd5415b843a722b72449800&limitLicense=true${limitLicense}`)
+    fetch(`https://api.spoonacular.com/food/trivia/random?apiKey=44775bcc16f3471491b2475052247c4b&limitLicense=true${limitLicense}`)
 
     .then(res => res.json())
     .then(limitLicense => buildCard(limitLicense))
