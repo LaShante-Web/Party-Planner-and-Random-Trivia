@@ -26,7 +26,7 @@ for (let i = 0; i < list.length; i++) {
     <div class="col" id="ideas">
     <h2>${plan.ideas}</h2>
     <p> ${plan.info}</p>
-    <img src="images/${plan.photo}" alt="${plan.type}" width="200px">
+    <img src="images/${plan.photo}" alt="${plan.type}" width="150px">
     </div>
 
 `;
