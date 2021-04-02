@@ -1,5 +1,5 @@
 
-const nameInput = document.getElementById('visitor');
+const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const textArea = document.getElementById('subject');
 
@@ -22,8 +22,8 @@ textArea.addEventListener('focus', focusHandler);
 textArea.addEventListener('blur', blurHandler);
 
 
-function isValidVisitor(visitor) {
-  return /^[a-z]+$/i.test(visitor);
+function isValidName(name) {
+  return /^[a-z]+$/i.test(name);
 }
 
 
@@ -55,7 +55,7 @@ function createListener(validator) {
   };
 }
 
-nameInput.addEventListener("input", createListener(isValidVisitor));
+nameInput.addEventListener("input", createListener(isValidName));
 
 emailInput.addEventListener("input", createListener(isValidEmail));
 
