@@ -26,7 +26,7 @@ for (let i = 0; i < list.length; i++) {
     <div class="col" id="ideas">
     <h2>${plan.ideas}</h2>
     <p> ${plan.info}</p>
-    <img src="images/${plan.photo}" alt="${plan.type}" width="150px">
+    <img src="images/${plan.photo}" alt="${plan.type}" width="200px">
     </div>
 
 `;
@@ -40,17 +40,3 @@ main.insertAdjacentHTML('beforeend', html);
 
 
 
-
-// const url = 'https://api.spoonacular.com/food/wine/recommendation?apiKey=17f3e9584fd5415b843a722b72449800&wine=merlot&number=2' // or whatever your url is 
-
-
-// fetch(url) 
-//  .then(response => response.json()) 
-//  .then(data => console.log(data)); //or whatever you want to do with the resulting object 
-
-
-
-
-
-// var obj = JSON.parse('{"id":"John", "lastName":"Doe"}');
-// document.getElementById("demo").innerHTML = obj.imageURL;
